@@ -7,15 +7,15 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {TabSelectors, InputList} from './demos';
+import {TabSelector, InputList} from './demos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([{
     path: '/',
     element: <App/>
 }, {
-    path: '/tabselectors',
-    element: <TabSelectors />
+    path: '/tabselector',
+    element: <TabSelector />
 }, {
     path: '/inputlist',
     element: <InputList />

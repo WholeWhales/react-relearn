@@ -24,10 +24,10 @@ function App() {
             Demos:
           </section>
           <Link
-              to="/tabselectors"
+              to="/tabselector"
               className="App-demos-link"
           >
-            TabSelectors
+            TabSelector
           </Link>
           <Link
               to="/inputlist"

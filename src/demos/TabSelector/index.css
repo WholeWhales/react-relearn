@@ -1,0 +1,36 @@
+.App-demos-tab-selector-component {
+    margin: 20px 16px 0;
+    width: 80px;
+    height: 32px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bolder;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.App-demos-tab-selector-component-selected {
+    color: #fff;
+}
+
+.App-demos-tab-selector-component-selected-red {
+    background-color: red;
+    border-color: red;
+}
+
+.App-demos-tab-selector-component-selected-green {
+    background-color: green;
+    border-color: green;
+}
+
+.App-demos-tab-selector-component-selected-orange {
+    background-color: orange;
+    border-color: orange;
+}
+
+.App-demos-tab-selector-component-selected-yellow {
+    background-color: gold;
+    border-color: gold;
+}
