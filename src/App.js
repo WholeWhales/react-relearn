@@ -35,6 +35,12 @@ function App() {
           >
             InputList
           </Link>
+          <Link
+              to="/ticktimer"
+              className="App-demos-link"
+          >
+            TickTimer
+          </Link>
         </section>
       </header>
     </div>
