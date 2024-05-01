@@ -1,5 +1,3 @@
-import {Link} from 'react-router-dom';
-
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,29 +17,6 @@ function App() {
         >
           Learn React
         </a>
-        <section className="App-demos">
-          <section className="App-demos-title">
-            Demos:
-          </section>
-          <Link
-              to="/tabselector"
-              className="App-demos-link"
-          >
-            TabSelector
-          </Link>
-          <Link
-              to="/inputlist"
-              className="App-demos-link"
-          >
-            InputList
-          </Link>
-          <Link
-              to="/ticktimer"
-              className="App-demos-link"
-          >
-            TickTimer
-          </Link>
-        </section>
       </header>
     </div>
   );

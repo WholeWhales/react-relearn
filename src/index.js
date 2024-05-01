@@ -1,31 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from 'react-router-dom';
-import './index.css';
+import {createRoot} from 'react-dom/client';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {TabSelector, InputList, TickTimer} from './demos';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const router = createBrowserRouter([{
-    path: '/',
-    element: <App/>
-}, {
-    path: '/tabselector',
-    element: <TabSelector />
-}, {
-    path: '/inputlist',
-    element: <InputList />
-}, {
-    path: '/ticktimer',
-    element: <TickTimer />
-}]);
+import './index.css';
+
+const root = createRoot(document.getElementById('root'));
+
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <App />
     </React.StrictMode>
 );
 
