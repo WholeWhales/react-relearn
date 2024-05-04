@@ -4,7 +4,7 @@ import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {TabSelector} from './demos';
+import {TabSelector, InputList} from './demos';
 
 import './index.css';
 
@@ -16,6 +16,9 @@ const router = createBrowserRouter([{
 }, {
     path: '/tabselector',
     element: <TabSelector />
+}, {
+    path: '/inputlist',
+    element: <InputList/>
 }]);
 
 root.render(
