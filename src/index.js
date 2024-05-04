@@ -1,16 +1,26 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
+import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {TabSelector} from './demos';
 
 import './index.css';
 
 const root = createRoot(document.getElementById('root'));
 
+const router = createBrowserRouter([{
+    path: '/',
+    element: <App />
+}, {
+    path: '/tabselector',
+    element: <TabSelector />
+}]);
+
 root.render(
     <React.StrictMode>
-        <App />
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 
