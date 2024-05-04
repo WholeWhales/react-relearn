@@ -1,30 +1,20 @@
-import React from 'react';
+import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 
-import App from './App';
+import {demos_browser_router_list} from './constants';
 import reportWebVitals from './reportWebVitals';
-import {TabSelector, InputList} from './demos';
 
 import './index.css';
 
 const root = createRoot(document.getElementById('root'));
 
-const router = createBrowserRouter([{
-    path: '/',
-    element: <App />
-}, {
-    path: '/tabselector',
-    element: <TabSelector />
-}, {
-    path: '/inputlist',
-    element: <InputList/>
-}]);
+const router = createBrowserRouter(demos_browser_router_list);
 
 root.render(
-    <React.StrictMode>
+    <StrictMode>
         <RouterProvider router={router} />
-    </React.StrictMode>
+    </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
