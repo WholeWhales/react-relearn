@@ -1,5 +1,5 @@
 import App from "../App";
-import {Clock, InputList, TabSelector} from "../demos";
+import {Clock, InputList, News, TabSelector} from "../demos";
 import React from "react";
 
 const demos_link = [{
@@ -14,6 +14,10 @@ const demos_link = [{
     id: 'clock',
     label: 'Clock',
     value: '/clock'
+}, {
+    id: 'news',
+    label: 'News',
+    value: '/news'
 }];
 
 const demos_browser_router_list = [{
@@ -28,6 +32,9 @@ const demos_browser_router_list = [{
 }, {
     path: '/clock',
     element: <Clock />
+}, {
+    path: '/news',
+    element: <News />
 }];
 
 export {

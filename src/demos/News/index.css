@@ -1,0 +1,19 @@
+.App-demos-news {
+    margin: 20px 16px;
+    width: 120px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.App-demos-news-item {
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+.App-demos-news-item:last-child {
+    border-bottom: none;
+}
